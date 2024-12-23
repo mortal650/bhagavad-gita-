@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhagavad-gita</title>
+    <style>
+        .multi-ling{
+            display:flex;
+            flex-direction:row ;
+            align-items: start;
+        }
+        a{
+            margin-right: 0px;
+            margin-left: 50px;
+        }
+        .versed{
+            display: flex;
+            flex-direction: column;
+            
+            align-items: center;
+        }
+        body{
+            height: 1000px;
+            background-image: url("Lord\ Krishna.jpeg");
+            background-repeat:no-repeat;
+            background-attachment: fixed;
+
+            background-size: 1500px;
+        }
+        img{
+        height: 300px;
+        width: 300px;
+        }
+        .gear44{
+        display: flex;
+    flex-direction: column;
+    background-color:rgba(217, 213, 138, 0.491);
+    height: 2000px;
+    width: 1000px;
+    margin-left: 350px;
+    
+    }
+    .zoro{
+        margin-left: 70px;
+    }
+    .first{
+        margin-left: 40px;
+    }
+    .hydro{
+        color: rgba(1, 2, 7, 0.659);
+        margin-right: 20px;
+        padding: 3px;
+        background-color: rgba(226, 234, 233, 0.439);
+        border-radius: 14px;
+        font-size: large;
+        font-weight: bold;
+       }
+       #image-container {
+      margin-top: 20px;
+      text-align: center;
+    }
+    img {
+      max-width: 300px; /* Limit width to 300px */
+      height: auto;     /* Maintain aspect ratio */
+      margin-left:150px;
+    }
+    .hero
+       {
+        background-color: rgba(213, 234, 21, 0.691);
+        color: rgb(35, 144, 65);
+        width: 340px;
+        margin-top: 30px;
+        
+       }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <a href="index.html" style="font-size: 19px; color: rgb(64, 21, 165); padding-right: 20px;">Home &rarr;</a> 
+        <a href="index1_english.html" style="font-size:19px; color: rgb(29, 10, 114); margin-left: -20px; padding-right: 20px;">chapter10 &rarr; </a>
+        <a href="index2_english.html" style="font-size:19px; color: rgb(18, 7, 103); margin-left: -20px;">chapter11</a>
+    </div>
+    <div class="gear44">
+        <div class="versed">
+            <div class="multi-ling">
+                <a href="verse40_english.html">English</a>
+                <a href="verse40_hindi.html">Hindi</a>
+                <a href="verse40_telugu.html">Telugu</a>
+                <a href="verse40_tamil.html">Tamil</a>
+                <a href="verse40_odia.html">Odia</a>
+                <a href="verse40_gujarati.html">Gujarati</a>
+            </div>
+            <div class="zoro">
+                <div>
+                    <h1>Verse</h1>
+                    <p>
+                        नान्तोऽस्ति मम दिव्यानां विभूतीनां परन्तप |<br>
+                        एष तूद्देशत: प्रोक्तो विभूतेर्विस्तरो मया || 40||
+            
+                    </p>
+                </div>
+                
+                <div>
+                    <h1>Verse</h1>
+                    <p> 
+                    nānto sti mama divyānāṁ vibhūtīnāṁ parantapa<br>
+                    eṣha tūddeśhataḥ prokto vibhūter vistaro mayā
+                    </p>
+                </div>
+            </div>
+            <div>
+                <audio  controls   id="myid"  src="#"></audio>
+            </div>
+            <div>
+                <button class="hydro" onclick="male_voice()"> male-voice</button>
+            <button class="hydro" onclick="female_voice()"> female-voice</button>
+            </div>
+            <div class="first">
+                <div>
+                    <h1>word-to-word</h1>
+                    <p>
+                        na—not&#59; antaḥ—end; asti—is; mama—my; divyānām—divine; vibhūtīnām—manifestations; parantapa—Arjun, the conqueror of the enemies; <br>
+                        eṣhaḥ—this; tu—but; uddeśhataḥ—just one portion; proktaḥ—declared; vibhūteḥ—of (my) glories; vistaraḥ—the breath of the topic; mayā—by me
+                    </p>
+                </div>
+                <div>
+                    <h1>Translation</h1>
+                    <p>
+                        There is no end to My divine manifestations, O conqueror of enemies. What I have declared to you is a mere sample of My infinite glories.
+                    </p>
+                </div>
+                <div>
+                    <h1>Summary</h1>
+                    <p>
+                        In verse 40 of Chapter 10 in the Bhagavad Gita, Lord Krishna acknowledges that His divine manifestations are vast and limitless. He mentions that what He has described so far is only a fraction of His infinite divine forms. This verse underscores the boundless nature of Krishna's divine presence and powers, emphasizing that it is impossible to comprehensively enumerate all of His manifestations.
+        
+        This passage complements the preceding verses by reinforcing the idea of Krishna's omnipresence and the vastness of the divine.
+                    </p>
+                </div>
+            </div>
+           
+         
+            
+        </div>
+        <div style="text-align: center;">
+            <button id="displayImageButton">Display Image</button>
+            <div id="image-container">
+              <img id="displayedImage" src="" alt="Click the button to display an image" style="display: none;">
+            </div>
+          </div>
+        
+    </div>
+
+    
+</body>
+<script>
+    var myvoice=document.querySelector("#myid");
+    function male_voice(){
+        myvoice.src="voice_over/verse_40.m4a";
+
+
+    }
+    function female_voice()
+    {
+        myvoice.src="voice_over/verse_40f.mp3";
+    }
+    const images = [
+      'https://tse3.mm.bing.net/th?id=OIG2.TsTGnCWyMfIcqB9svH2z&pid=ImgGn/300?text=Image+1',
+      'https://tse4.mm.bing.net/th?id=OIG3.RJc_pDNwAaupXplHRqzr&pid=ImgGn/300?text=Image+2',
+      'https://tse1.mm.bing.net/th?id=OIG3.k1J8VGJkhHrVjywRn3_D&pid=ImgGn/300?text=Image+3',
+      'https://tse1.mm.bing.net/th?id=OIG3.hMeNB.WmJVo38ZLy6UnV&pid=ImgGn/300?text=Image+4',
+      'https://tse4.mm.bing.net/th?id=OIG3.z2DpfdtziavZywpDTIuW&pid=ImgGn/300?text=Image+5',
+      'https://tse3.mm.bing.net/th?id=OIG2.VB_tNcxS5M9gU2kgLiSq&pid=ImgGn/300?text=Image+6',
+      'https://tse3.mm.bing.net/th?id=OIG2.TsTGnCWyMfIcqB9svH2z&pid=ImgGn/300?text=Image+7',
+      'https://tse3.mm.bing.net/th?id=OIG2.zzJ5.hm08nr5sHyqRKeq&pid=ImgGn/300?text=Image+8',
+      'https://tse4.mm.bing.net/th?id=OIG1.8dzijKRkx_LZh_3rO5nU&pid=ImgGn/300?text=Image+9',
+      'https://tse3.mm.bing.net/th?id=OIG2.zXruYTKYr45gU4AoW7QQ&pid=ImgGn/300?text=Image+10',
+    ];
+
+    let currentIndex = 0;
+
+    // Reference to the button and image container
+    const button = document.getElementById('displayImageButton');
+    const imageElement = document.getElementById('displayedImage');
+
+    // Function to display the next image
+    button.addEventListener('click', () => {
+      // Update the image source
+      imageElement.src = images[currentIndex];
+      imageElement.style.display = 'block';
+
+      // Update the index for the next click
+      currentIndex = (currentIndex + 1) % images.length; // Loop back to the first image
+    });
+</script>
+</html>
